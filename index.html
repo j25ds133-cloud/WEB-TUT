@@ -3,13 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello GitHub Pages</title>
+  <title>Your Name – Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <a href="#home" class="logo">Your Name</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <h1>Hello from GitHub Pages</h1>
-    <p>This static site is hosted straight from a GitHub repository.</p>
+    <section id="home" class="hero">
+      <h1>Hi, I'm Your Name.</h1>
+      <p>I build clean, accessible websites.</p>
+      <a class="btn" href="#projects">See my work</a>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>I'm a computer science student interested in web development. I enjoy turning ideas into
+         simple, usable interfaces. Replace this text with your own story, skills, and goals.</p>
+      <ul class="skills">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>To-do App</h3>
+          <p>Add, complete, and delete tasks with vanilla JavaScript.</p>
+        </article>
+        <article class="card">
+          <h3>Weather App</h3>
+          <p>Real-time weather using the Fetch API.</p>
+        </article>
+        <article class="card">
+          <h3>Notes App</h3>
+          <p>A React single-page app with full CRUD.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </section>
   </main>
+
+  <footer><p>&copy; 2026 Your Name</p></footer>
 </body>
 </html>
